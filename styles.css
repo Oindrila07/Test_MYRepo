@@ -226,19 +226,6 @@ a:link {
 }
 
 @media screen and (min-width: 576px) {
-    /* #news-cards {
-        display: flex;
-        margin: auto;
-        flex-direction: row;
-        justify-content: space-evenly;
-        max-width: 786px;
-        min-width: 780px;
-        width: 100%;
-    } */
-
-    #start {
-        min-width: 120px;
-    }
 
     #news-cards {
         display: flex;
@@ -268,6 +255,7 @@ a:link {
         width: calc((var(--variable-width) - 30px - 6px)/3);
         overflow: hidden;
         margin: auto;
+        height: 740px;
         /* position: absolute; */
     }
 
@@ -281,7 +269,11 @@ a:link {
         /* min-width: 768px; */
         width: 100%;
         margin: 0;
-        min-width: 786px;
+        min-width: 320px;
+    }
+
+    #hero {
+        left: 55%;
     }
 
     #bkg {
@@ -309,6 +301,12 @@ a:link {
     #news {
         padding-left: 3vw;
     }
+
+    .read-more {
+        padding-left: 45%;
+        padding-top: 130px;
+}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -321,12 +319,8 @@ a:link {
         margin: auto;
         /* min-width: 380px; */
         width: calc((var(--variable-width) - 40px - 6px)/3);
+        /* position: relative; */
     }
-
-    /* #news-cards {
-        width: 100%;
-        min-width: 1240px;
-    } */
 
     #news-cards {
         display: flex;
@@ -342,13 +336,16 @@ a:link {
     #para-1,
     #para-2,
     #para-3 {
-        width: 355px;
+        max-width: 760px;
+        min-width: 219px;
+        width: 90%;
         text-align: left;
         padding: auto;
     }
 
     .read-more {
-        padding-left: 240px;
+            padding-left: 60%;
+            padding-top: 20px;
     }
 
     #hero {
@@ -368,17 +365,8 @@ a:link {
         object-fit: cover;
         width: 100%;
         overflow-x: hidden;
-        max-width: 1344px;
-        /* margin: 0 auto; */
+        max-width: 1544px;
     }
-
-    /* body,
-    html {
-        min-width: 786px;
-        max-width: 1340px;
-        width: 100%;
-        overflow-x: hidden;
-    } */
 
     .overlay-text {
         transform: translate(-60%, -50%);
@@ -391,5 +379,4 @@ a:link {
     #start {
         min-width: 420px;
     }
-
 }
