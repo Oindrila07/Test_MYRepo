@@ -255,6 +255,7 @@ a:link {
         width: calc((var(--variable-width) - 30px - 6px)/3);
         overflow: hidden;
         margin: auto;
+        height: 740px;
         /* position: absolute; */
     }
 
@@ -300,6 +301,12 @@ a:link {
     #news {
         padding-left: 3vw;
     }
+
+    .read-more {
+        padding-left: 45%;
+        padding-top: 130px;
+}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -312,6 +319,7 @@ a:link {
         margin: auto;
         /* min-width: 380px; */
         width: calc((var(--variable-width) - 40px - 6px)/3);
+        /* position: relative; */
     }
 
     #news-cards {
@@ -328,13 +336,16 @@ a:link {
     #para-1,
     #para-2,
     #para-3 {
-        width: 355px;
+        max-width: 760px;
+        min-width: 219px;
+        width: 90%;
         text-align: left;
         padding: auto;
     }
 
     .read-more {
-        padding-left: 240px;
+            padding-left: 60%;
+            padding-top: 20px;
     }
 
     #hero {
